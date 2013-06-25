@@ -1,7 +1,7 @@
 The Biggest Tracker
 ===================
 
-Simple tracking app for people running their own version of The Biggest Loser.
+Simple weight loss tracking app for people running their own version of The Biggest Loser.
 It's pretty hacky and all runs off of 1 page but it gets the job done. Right now it's designed for two users, but that's easily scaled by adding more user divs to the tracking page.
 
 ### Setup
