@@ -1,0 +1,21 @@
+/* Foundation was made by ZURB, an interaction design and design strategy firm in Campbell, CA */
+/* zurb.com */
+/* humanstxt.org */
+
+
+/* TEAM */                   
+Nerd: Jenn Vargas           
+Site: http://jennvargas.com 
+Twitter: @jennjenn
+Location: New York, NY. USA.
+
+
+/* THANKS */
+ColourLovers Palette: http://www.colourlovers.com/palette/424489/summer_of_85
+
+
+/* SITE */
+Standards: HTML5, CSS3
+Last update: 2013/06/24 
+Components: jQuery
+Software: Textmate, Git

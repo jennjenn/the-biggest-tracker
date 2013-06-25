@@ -1,0 +1,42 @@
+h1{
+	color: #FF8826;
+	text-align:center;
+}
+#login-panel{
+	display:none;
+}
+
+.stat-wrap{
+	text-align:center;
+	margin-bottom:50px;
+}
+
+.large-stat{
+	font-size:7em;
+	font-weight:bold;
+}
+
+.large-stat-label{
+	font-size:3em;
+	font-weight:100;
+}
+
+#danielle{
+	color: #2C9FA3;
+}
+
+#danielle h4{
+	background: #2C9FA3;
+	color: #fff;
+	text-align:center;
+}
+
+#jenn{
+	color: #B31237;
+}
+
+#jenn h4{
+	background: #B31237;
+	color: #fff;
+	text-align:center;
+}
