@@ -38,5 +38,6 @@ CREATE TABLE IF NOT EXISTS `users` (
 ### TODO
 * registration page (because adding users straight to the DB is just weird)
 * daily reminder emails
+* function to generate status blocks for ALL users from the DB instead of individual divs
 * other stuff (highcharts, etc)
 
