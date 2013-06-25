@@ -12,7 +12,7 @@ function login($username, $password){
 		$_SESSION['uid'] = $uid;
 		$_SESSION['username'] = $username;
 		$loggedin = 1;
-		header("Location: /tbl");
+		header("Location: /");
 	}else{
 		$loggedin = 0;
 		$_SESSION['loggedin'] = 0;
@@ -32,7 +32,7 @@ function getLatestUpdate($uid){
 
 function updateWeight($uid, $weight){
 	$query = mysql_query("INSERT INTO log(uid, weight) VALUES ($uid, '$weight')") or die(mysql_error());
-	header("Location: /tbl");
+	header("Location: /");
 }
 
 function percentChangeTotal($uid){
@@ -64,7 +64,7 @@ $today = date('Y-m-d', time());
 if($_GET['q'] == "logout"){
 	$_SESSION = array();
 	session_destroy();
-	header("Location: /tbl");
+	header("Location: /");
 }
 
 if(!empty($_POST['username']) && !empty($_POST['password'])){
