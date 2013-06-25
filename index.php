@@ -10,7 +10,7 @@ require_once('functions.php');
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width" />
-	<title>J&D Do TBL</title>
+	<title>The Biggest Tracker</title>
 
 	<link rel="stylesheet" href="css/foundation.min.css" />
 	<link rel="stylesheet" href="css/app.css" />
