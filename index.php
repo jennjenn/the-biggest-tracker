@@ -72,7 +72,7 @@ require_once('functions.php');
 			</div>
 			<div class="row">
 				<div class="large-12 columns"><h3>The Latest</h3></div>
-				<div id="danielle" class="large-6 columns">
+				<div id="blue" class="large-6 columns">
 					<h4>DP</h4>
 					<div class="stat-wrap">
 						<div class="large-stat"><?php echo percentChangeTotal(2); ?>%</div>
@@ -83,7 +83,7 @@ require_once('functions.php');
 						<div class="large-stat-label">lost overall</div>
 					</div>
 				</div>
-				<div id="jenn" class="large-6 columns">
+				<div id="red" class="large-6 columns">
 					<h4>JV</h4>
 					<div class="stat-wrap">
 						<div class="large-stat"><?php echo percentChangeTotal(1); ?>%</div>
