@@ -12,31 +12,79 @@ h1{
 }
 
 .large-stat{
-	font-size:7em;
+	font-size:5.5em;
 	font-weight:bold;
 }
 
 .large-stat-label{
-	font-size:3em;
-	font-weight:100;
+	font-size: 2.5em;
+    font-weight: 100;
+    margin-top: -0.5em;
 }
 
-#blue{
+.stat-update{
+	color: #8e8e8e;
+	font-weight:200;
+	text-align:center;
+	margin: -30px 0 40px;
+}
+
+h4{
+	background: #4ED99C;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 1.35em;
+}
+
+#danielle{
 	color: #2C9FA3;
 }
 
-#blue h4{
+#danielle h4{
 	background: #2C9FA3;
 	color: #fff;
 	text-align:center;
 }
 
-#red{
+#jenn{
 	color: #B31237;
 }
 
-#red h4{
+#jenn h4{
 	background: #B31237;
 	color: #fff;
 	text-align:center;
+}
+
+#brielle{
+	color: #FF8826;
+}
+
+#brielle h4{
+	background: #FF8826;
+	color: #fff;
+	text-align: center;
+}
+
+#kathy{
+	color: #6D991A;
+}
+
+#kathy h4{
+	background: #6D991A;
+	color: #fff;
+	text-align:center;
+}
+
+.button-success{
+	background: #2AAF74;
+}
+
+#highlight h4{
+	background: #F7BE7F;
+}
+
+#footer{
+	margin-top: 2em;
 }
