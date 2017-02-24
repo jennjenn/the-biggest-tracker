@@ -2,42 +2,41 @@ The Biggest Tracker
 ===================
 
 Simple weight loss tracking app for people running their own version of The Biggest Loser.
-It's pretty hacky and all runs off of 1 page but it gets the job done. Right now it's designed for two users, but that's easily scaled by adding more user divs to the tracking page.
+It's pretty hacky and I only sort of updated stuff for 2017 (and php 7), but it "works." There's some extra cruft I didn't clean up, but better than nothing!
 
 ### Setup
 * DB connect is located in ```connect.php```. Enter the usual stuff here.
-* Users are entered directly into the DB. Either use a GUI or run ```INSERT INTO users (username, password, email) VALUES ('$username', md5('$password'), '$email')```
-* Currently redirects are hard-coded into ```functions.php```. If you're installing this anywhere other than the root directory, you might want to update this.
+* Currently a few redirects are hard-coded into ```functions.php```. If you're installing this anywhere other than the root directory, you might want to update this.
 
 ---
 ### Setting up the DB
 ```
-SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
-
-CREATE TABLE IF NOT EXISTS `log` (
+-- Create syntax for TABLE 'log'
+CREATE TABLE `log` (
   `entryID` int(11) NOT NULL AUTO_INCREMENT,
   `uid` int(11) NOT NULL,
   `weight` varchar(6) NOT NULL,
   `entry_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`entryID`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
 
-
-CREATE TABLE IF NOT EXISTS `users` (
+-- Create syntax for TABLE 'users'
+CREATE TABLE `users` (
   `uid` int(11) NOT NULL AUTO_INCREMENT,
   `username` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
+  `latest_percent_change` float DEFAULT NULL,
   PRIMARY KEY (`uid`),
   UNIQUE KEY `username` (`username`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
 ```
 
 ---
 
 ### TODO
-* registration page (because adding users straight to the DB is just weird)
+* ~~registration page (because adding users straight to the DB is just weird)~~
 * daily reminder emails
-* function to generate status blocks for ALL users from the DB instead of individual divs
+* ~~function to generate status blocks for ALL users from the DB instead of individual divs~~
 * other stuff (highcharts, etc)
 
