@@ -45,11 +45,6 @@
                                     <button type="submit" class="btn btn-primary">Go &rarr;</button>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col">
-                                    <small><a id="forgot-pw-link" href="/forgot-password">Forgot your password?</a></small>
-                                </div>
-                            </div>
                         </div>
                     </form>
                 </div>
